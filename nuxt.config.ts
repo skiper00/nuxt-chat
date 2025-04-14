@@ -10,21 +10,28 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/image',
-    '@nuxt/ui'
+    '@nuxt/ui',
+    'shadcn-nuxt',
+    'prisma/nuxt'
   ],
+
+  shadcn: {
+    prefix: '',
+    componentDir: './components/ui'
+  },
 
 
   imports: {
-    autoImport: true
-  },
+  autoImport: true
+},
 
   components: {
-    dirs: [
-      { path: '~/widgets', pathPrefix: false, },
-      { path: '~/features', pathPrefix: false, },
-      { path: '~/shared', pathPrefix: false, },
-      { path: '~/pages', pathPrefix: false, },
-      { path: '~/entities', pathPrefix: false, },
-    ],
-  }
+  dirs: [
+    { path: '~/widgets', pathPrefix: false, },
+    { path: '~/features', pathPrefix: false, },
+    { path: '~/shared', pathPrefix: false, },
+    { path: '~/pages', pathPrefix: false, },
+    { path: '~/entities', pathPrefix: false, },
+  ],
+}
 })

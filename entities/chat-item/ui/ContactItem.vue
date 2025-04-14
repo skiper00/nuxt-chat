@@ -1,5 +1,5 @@
 <template>
-    <div class="group hover:text-white hover:bg-[#272a30] flex items-center px-[8px] py-[14px]">
+    <div class="group hover:text-white hover:bg-[#272a30] flex px-[8px] py-[14px]">
 <img class="rounded-full max-w-[49px] max-h-[49px]" src="../../../public/icons/Avatar/Profile.svg" alt="">
 <div class="ml-2">
     <p class="text-white font-bold">Bill Kuphal</p>
