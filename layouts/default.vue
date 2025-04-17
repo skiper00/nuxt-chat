@@ -22,6 +22,7 @@
                 </div>
             </ResizablePanel>
         </ResizablePanelGroup>
+        <ModalAuth />
     </div>
 </template>
 
