@@ -20,7 +20,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/ui',
     'shadcn-nuxt',
-    '@nuxtjs/supabase'
+    '@nuxtjs/supabase',
+    '@pinia/nuxt',
   ],
 
 
