@@ -1,5 +1,5 @@
 <template>
-    <div v-if="modalStore.isModal" class="fixed inset-0 bg-indigo-950 bg-opacity-50 flex justify-center items-center z-50">
+    <div class="fixed inset-0 bg-indigo-950 bg-opacity-50 flex justify-center items-center z-50">
         <div class="bg-white rounded-lg w-full max-w-md p-6 shadow-lg relative">
 
             <div class="flex justify-between items-center border-b pb-3 mb-4">
@@ -25,7 +25,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { useModalStore } from '../model/isModal';
+import { useModalStore } from '../model/store/isModal';
 
 const modalStore = useModalStore()
 const showSignUp = ref(false)

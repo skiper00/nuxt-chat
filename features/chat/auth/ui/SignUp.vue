@@ -26,13 +26,18 @@
         </div>
 
         <div class="space-y-3">
-            <button @click="signInWithGoogle"
-                class="w-full flex items-center justify-center cursor-pointer gap-2 py-2 border border-gray-300 rounded-md text-gray-600 font-medium hover:bg-gray-100 transition">
+            <button
+            type="submit"
+            class="w-full flex items-center justify-center cursor-pointer gap-2 py-2 border border-gray-300 rounded-md text-gray-600 font-medium hover:bg-gray-100 transition"
+            @click="signInWithGoogle"
+            >
                 <Icon icon="flat-color-icons:google" width="24" height="24" />
                 Войти через Google
             </button>
-            <button @click="signInWithGitHub" type="submit"
-                class="w-full flex items-center justify-center cursor-pointer py-2 gap-2 border border-gray-300 rounded-md text-gray-600 font-medium hover:bg-gray-100 transition">
+            <button type="submit"
+                class="w-full flex items-center justify-center cursor-pointer py-2 gap-2 border border-gray-300 rounded-md text-gray-600 font-medium hover:bg-gray-100 transition"
+                @click="signInWithGitHub"
+                >
                 <Icon icon="mdi:github" width="24" height="24" color="black" />
                 Войти через GitHub
             </button>

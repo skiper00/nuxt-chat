@@ -17,20 +17,23 @@
                     </div>
                     <div class="border-t bg-primary-black relative">
                         <FooterInput />
-                        <ScrollTDownBtn class="absolute bottom-[65px] right-6"/>
+                        <ScrollTDownBtn class="absolute bottom-[65px] right-6" />
                     </div>
                 </div>
             </ResizablePanel>
         </ResizablePanelGroup>
-        <ModalAuth />
+        <ModalAuth v-if="modalStore.isModal" />
     </div>
 </template>
 
-<script setup>
-import { 
-    ResizablePanelGroup, 
-    ResizablePanel, 
-    ResizableHandle 
+<script lang="ts" setup>
+import { useModalStore } from '~/features/chat/auth/model/store/isModal';
+import {
+    ResizablePanelGroup,
+    ResizablePanel,
+    ResizableHandle
 } from '@/components/ui/resizable';
+
+const modalStore = useModalStore()
 
 </script>
